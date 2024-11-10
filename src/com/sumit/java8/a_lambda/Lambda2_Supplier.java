@@ -3,7 +3,7 @@ package com.sumit.java8.a_lambda;
 import java.time.LocalTime;
 import java.util.function.Supplier;
 
-public class Lambda4_Supplier {
+public class Lambda2_Supplier {
 
     public static void main(String[] args) {
         Supplier<StringBuilder> supplier1 = () -> new StringBuilder();
