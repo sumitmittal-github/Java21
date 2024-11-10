@@ -25,7 +25,6 @@ public class MR2_StaticMR {
         Consumer<List<Integer>> consumerMR = Collections::sort;
         consumerMR.accept(numbers);
         System.out.println("After sorting  : " + numbers);
-
     }
 
 }
