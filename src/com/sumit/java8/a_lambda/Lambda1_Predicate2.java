@@ -2,7 +2,7 @@ package com.sumit.java8.a_lambda;
 
 import java.util.function.Predicate;
 
-public class Lambda2 {
+public class Lambda1_Predicate2 {
 
     // created a method which is
     public static <T> boolean check(T t, Predicate<T> predicate){

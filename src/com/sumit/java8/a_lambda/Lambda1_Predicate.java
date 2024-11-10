@@ -2,7 +2,7 @@ package com.sumit.java8.a_lambda;
 
 import java.util.function.Predicate;
 
-public class Lambda1 {
+public class Lambda1_Predicate {
 
     public static void main(String[] args) {
 
