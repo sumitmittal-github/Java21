@@ -25,6 +25,7 @@ public class S1_PrimitiveToObjectConversion {
         IntStream.of(1,2,3)
                 .mapToLong(n -> (long)n*2)
                 .forEach(s -> System.out.print(s + " "));
+        
     }
 
 }
