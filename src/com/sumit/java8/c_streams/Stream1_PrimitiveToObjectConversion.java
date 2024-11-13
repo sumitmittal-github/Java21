@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
-public class S1_PrimitiveToObjectConversion {
+public class Stream1_PrimitiveToObjectConversion {
 
     public static void main(String[] args) {
 
