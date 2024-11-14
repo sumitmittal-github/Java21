@@ -2,7 +2,7 @@ package com.sumit.java8.c_streams;
 
 import java.util.stream.IntStream;
 
-public class Streams2_RangeAndRangeClosed {
+public class Stream2_RangeAndRangeClosed {
 
     public static void main(String[] args) {
         sum();

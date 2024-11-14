@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.OptionalInt;
 
-public class Streams5_IntStream {
+public class Stream5_IntStream {
 
     public static void main(String[] args) {
         List<Integer> list = Arrays.asList(1, 2, 3);
