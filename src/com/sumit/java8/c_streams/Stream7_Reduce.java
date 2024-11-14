@@ -10,7 +10,7 @@ public class Stream7_Reduce {
 
     public static void main(String[] args) {
         List<Integer> list = Arrays.asList(10, 47, 33, 23);
-        
+
         // output should be Optional<T>
         Optional<Integer> ans1 = list.stream()
                                      .reduce( (i1, i2) -> Integer.max(i1, i2));
