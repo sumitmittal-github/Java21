@@ -32,7 +32,7 @@ public class Stream10_Map2 {
         Map<String, Double> maps1 = books.stream()
                                          .collect( Collectors.toMap(     book -> book.getTitle(), book -> book.getPrice(),     (v1, v2) -> v1+v2));
         maps1.forEach( (k,v) -> System.out.println(k + " : " + v));
-        
+
 
 
         Map<String, Double> maps2 = books.stream()
