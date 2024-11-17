@@ -18,15 +18,19 @@ public class Searching1_BinarySearch {
                 new Person("D ", "Y", 20, new Date())
         );
 
-        // person we want to search in list
-        Person p = new Person("C", "U", 10, new Date());
-        Comparator<Person> comparator = Comparator.comparing(Person::getFirstName);
 
-        int idx = Collections.binarySearch(list, p, comparator);
-        System.out.println("Index of person = " + idx);
-        
+        // step-1 : sort the list with custom comparator
+        Comparator<Person> comparator = Comparator.comparing(Person::getFirstName);
+        Collections.sort(list, comparator);         //[A  A  B  C  C  D]
+
+        // step-2 : pass custom comparator in the binary search
+        Person p1 = new Person("C", "U", 10, new Date());
+        int idx1 = Collections.binarySearch(list, p1, comparator);
+        System.out.println("Index of person p1 = " + idx1);
+
+        Person p2 = new Person("B", "V", 30, new Date());
+        int idx2 = Collections.binarySearch(list, p2, comparator);
+        System.out.println("Index of person p2 = " + idx2);
     }
-    
-    
-    
+
 }
