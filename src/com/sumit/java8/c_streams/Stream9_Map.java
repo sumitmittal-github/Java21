@@ -1,5 +1,7 @@
 package com.sumit.java8.c_streams;
 
+import com.sumit.java8.Book;
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;

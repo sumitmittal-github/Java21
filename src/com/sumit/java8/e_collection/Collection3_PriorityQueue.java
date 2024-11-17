@@ -1,6 +1,6 @@
 package com.sumit.java8.e_collection;
 
-import com.sumit.java8.c_streams.Book;
+import com.sumit.java8.Book;
 
 import java.util.Comparator;
 import java.util.Iterator;

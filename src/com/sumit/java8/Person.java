@@ -1,4 +1,4 @@
-package com.sumit.java8.c_streams;
+package com.sumit.java8;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -9,7 +9,7 @@ import java.util.Date;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-class Person {
+public class Person {
 
     private String firstName;
     private String lastName;

@@ -1,4 +1,4 @@
-package com.sumit.java8.c_streams;
+package com.sumit.java8;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

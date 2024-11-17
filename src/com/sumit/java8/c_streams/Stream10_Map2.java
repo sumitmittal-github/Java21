@@ -1,9 +1,10 @@
 package com.sumit.java8.c_streams;
 
+import com.sumit.java8.Book;
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
-import java.util.function.BiConsumer;
 import java.util.stream.Collectors;
 
 public class Stream10_Map2 {
