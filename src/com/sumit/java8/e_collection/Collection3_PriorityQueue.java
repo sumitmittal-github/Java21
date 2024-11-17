@@ -19,7 +19,7 @@ public class Collection3_PriorityQueue {
         priorityQueue1.offer(new Book("Python", 23.0));
         priorityQueue1.offer(new Book("C++",    99.0));
 
-        Iterator<Book> it1 = priorityQueue1.iterator();;
+        Iterator<Book> it1 = priorityQueue1.iterator();
         while(it1.hasNext())
             System.out.println(priorityQueue1.poll());
 
@@ -28,15 +28,14 @@ public class Collection3_PriorityQueue {
 
 
         // Priority is Title of the books in reverse order
-        Comparator<Book> comparator2 = Comparator.comparing(book -> book.getTitle());
-        comparator2 = comparator2.reversed();
+        Comparator<Book> comparator2 = Comparator.comparing(Book::getTitle).reversed();
 
         Queue<Book> priorityQueue2 = new PriorityQueue<>(comparator2);
         priorityQueue2.offer(new Book("Java",   55.0));
         priorityQueue2.offer(new Book("Python", 23.0));
         priorityQueue2.offer(new Book("C++",    99.0));
 
-        Iterator<Book> it2 = priorityQueue2.iterator();;
+        Iterator<Book> it2 = priorityQueue2.iterator();
         while(it2.hasNext())
             System.out.println(priorityQueue2.poll());
 
@@ -54,7 +53,7 @@ public class Collection3_PriorityQueue {
         priorityQueue3.offer(new Book("Python", 23.0));
         priorityQueue3.offer(new Book("C++",    99.0));
 
-        Iterator<Book> it3 = priorityQueue3.iterator();;
+        Iterator<Book> it3 = priorityQueue3.iterator();
         while(it3.hasNext())
             System.out.println(priorityQueue3.poll());
 
