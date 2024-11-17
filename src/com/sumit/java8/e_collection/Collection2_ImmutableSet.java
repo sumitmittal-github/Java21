@@ -2,7 +2,7 @@ package com.sumit.java8.e_collection;
 
 import java.util.*;
 
-public class Collection1_ImmutableSet {
+public class Collection2_ImmutableSet {
 
     // Different ways to create a Immutable set
 
