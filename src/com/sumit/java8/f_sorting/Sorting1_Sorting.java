@@ -1,9 +1,9 @@
-package com.sumit.java8.e_collection;
+package com.sumit.java8.f_sorting;
 
 import com.sumit.java8.Person;
 import java.util.*;
 
-public class Collection4_Sorting {
+public class Sorting1_Sorting {
 
     // Sort persons by first name
     // if last name is same then by age

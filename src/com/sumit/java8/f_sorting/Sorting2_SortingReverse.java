@@ -1,9 +1,9 @@
-package com.sumit.java8.e_collection;
+package com.sumit.java8.f_sorting;
 
 import com.sumit.java8.Person;
 import java.util.*;
 
-public class Collection4_SortingReverse {
+public class Sorting2_SortingReverse {
 
     // Sort persons in reverse order (Descending order) of first name
 
