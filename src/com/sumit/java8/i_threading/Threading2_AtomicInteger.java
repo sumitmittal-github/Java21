@@ -1,14 +1,14 @@
 package com.sumit.java8.i_threading;
 
-public class Threading1_RaceCondition {
+import java.util.concurrent.atomic.AtomicInteger;
 
-    static int counter = 0;
+public class Threading2_AtomicInteger {
+
+    static AtomicInteger counter = new AtomicInteger(0);
 
     public static void addToCounter(){
-        int temp = counter;
         System.out.println("Before : " + counter + "by Thread id = " + Thread.currentThread().threadId());
-        counter = temp+1;
-        System.out.println("After  : " + counter + "by Thread id = " + Thread.currentThread().threadId());
+        System.out.println("After  : " + counter.incrementAndGet() + "by Thread id = " + Thread.currentThread().threadId());
     }
 
     public static void main(String[] args) throws InterruptedException {
