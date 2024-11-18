@@ -4,6 +4,8 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class Threading2_AtomicInteger {
 
+    // Solution-1 of Race condition : Atomic Integer
+
     static AtomicInteger counter = new AtomicInteger(0);
 
     public static void addToCounter(){
