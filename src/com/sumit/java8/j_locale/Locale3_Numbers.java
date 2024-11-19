@@ -7,30 +7,30 @@ import java.util.Locale;
 public class Locale3_Numbers {
 
     public static void main(String[] args) throws ParseException {
-        numberToStringLocaleConversion();
-        stringToNumberLocaleConversion();
+        formatNumber();
+        parseNumber();
     }
 
-    private static void numberToStringLocaleConversion() {
-        // converting num to string in default locale
+    private static void formatNumber() {
+        // formatting double into default locale format
         String defaultLocaleStr = NumberFormat.getInstance().format(77000.11);
         System.out.println(defaultLocaleStr);        //77,000.11
 
-        // converting num to string in Italy locale
+        // formatting double into Italy locale format
         String itlyLocaleStr = NumberFormat.getNumberInstance(Locale.ITALY).format(77000.11);
         System.out.println(itlyLocaleStr);          //77.000,11
 
-        // converting num to string in France locale
+        // formatting double into France locale format
         String franceLocaleStr = NumberFormat.getNumberInstance(Locale.FRANCE).format(77000.11);
         System.out.println(franceLocaleStr);        //77 000,11
     }
 
-    private static void stringToNumberLocaleConversion() throws ParseException {
-        // converting String num of default locale into double
+    private static void parseNumber() throws ParseException {
+        // parsing default locale string numbers into Number
         double defaultLocale = (double) NumberFormat.getInstance().parse("77,000.11");
         System.out.println(defaultLocale);        //77000.11
 
-        // converting String num of Italy locale into double
+        // parsing italy locale string numbers into Number
         double itlyLocaleStr = (double) NumberFormat.getNumberInstance(Locale.ITALY).parse("77.000,11");
         System.out.println(itlyLocaleStr);        //77000.11
     }
