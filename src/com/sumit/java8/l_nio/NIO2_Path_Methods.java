@@ -1,9 +1,8 @@
 package com.sumit.java8.l_nio;
 
 import java.nio.file.Path;
-import java.nio.file.Paths;
 
-public class NIO2_PathMethods {
+public class NIO2_Path_Methods {
 
     public static void main(String[] args) {
 
