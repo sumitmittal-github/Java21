@@ -5,10 +5,14 @@ import java.io.*;
 public class IO1_Texts {
 
     public static void main(String[] args) throws Exception {
+
+        System.out.println("Current working directory is : ");
+        System.out.println(System.getProperty("user.dir"));
+
         //readCharByChar();
         readLineByLine();
     }
-    
+
     public static void readCharByChar() throws Exception {
         try(FileReader reader = new FileReader(new File("C:\\Users\\etumsmi\\projects\\source.txt"));
             FileWriter writer = new FileWriter(new File("C:\\Users\\etumsmi\\projects\\target.txt")))
