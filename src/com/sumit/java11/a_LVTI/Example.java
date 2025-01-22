@@ -1,4 +1,6 @@
-package com.sumit.java11.a_var;
+package com.sumit.java11.a_LVTI;
+
+// Local Variable Type Inference
 
 public class Example {
 

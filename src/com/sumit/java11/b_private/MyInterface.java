@@ -1,15 +1,10 @@
 package com.sumit.java11.b_private;
 
+// Private methods in Interface
+
 public interface MyInterface {
 
-    default void m1(){
-        System.out.println("default method");
-    }
-
-    static void m2(){
-        System.out.println("static method");
-    }
-
+    // private method
     private void m3(){
         System.out.println("private method");
     }
@@ -18,6 +13,29 @@ public interface MyInterface {
         System.out.println("static private method");
     }
 
+
+
+
+
+    // default method
+    default void m1(){
+        System.out.println("default method");
+    }
+
+
+
+
+
+    // static method
+    static void m2(){
+        System.out.println("static method");
+    }
+
+
+
+
+
+    // abstract method
     void m5();
 
 }
