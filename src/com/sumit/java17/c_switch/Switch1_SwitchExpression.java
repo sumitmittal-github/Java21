@@ -1,6 +1,6 @@
 package com.sumit.java17.c_switch;
 
-public class Switch_SwitchExpression {
+public class Switch1_SwitchExpression {
 
     public static void traditionalSwitch(String direction){
         int length = 0;
