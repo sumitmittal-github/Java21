@@ -32,5 +32,5 @@ final class r extends q {
 
 
 
-public class SC_Example1 {
+public class SealedClassesExample {
 }
