@@ -17,5 +17,5 @@ public class Switch2_PatternMatching {
         matchPattern(null);
         matchPattern(123.4);
     }
-    
+
 }
