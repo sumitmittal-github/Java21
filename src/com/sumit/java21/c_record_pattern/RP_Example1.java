@@ -5,16 +5,16 @@ record Employee(String name, int age){ }
 public class RP_Example1 {
 
     public static void main(String[] args) {
-        System.out.println("===========================");
-        check1("Lokesh-1");
-        check1(new Employee("Sumit-1", 35));
+        System.out.println("========== Type Pattern =================");
+        typePattern("Lokesh-1");
+        typePattern(new Employee("Sumit-1", 35));
 
-        System.out.println("===========================");
-        check2("Lokesh-2");
-        check2(new Employee("Sumit-2", 40));
+        System.out.println("========== Record Pattern =================");
+        recordPattern("Lokesh-2");
+        recordPattern(new Employee("Sumit-2", 40));
     }
 
-    public static void check1(Object obj){
+    public static void typePattern(Object obj){
         if(obj instanceof String s)
             System.out.println("String : " + s.toUpperCase());
         else if (obj instanceof Employee p)
@@ -23,7 +23,7 @@ public class RP_Example1 {
             System.out.println("Unsupported type");
     }
 
-    public static void check2(Object obj){
+    public static void recordPattern(Object obj){
         if(obj instanceof String s)
             System.out.println("String : " + s.toUpperCase());
         else if (obj instanceof Employee(String name, int age))

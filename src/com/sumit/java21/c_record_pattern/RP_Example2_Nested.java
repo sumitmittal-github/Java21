@@ -6,16 +6,16 @@ record Address(String country, String postalCode){ }
 public class RP_Example2_Nested {
 
     public static void main(String[] args) {
-        System.out.println("===========================");
-        check1("Lokesh-1");
-        check1(new Person("Sumit-1", new Address("India", "335063")));
+        System.out.println("===== Type Pattern ======================");
+        typePattern("Lokesh-1");
+        typePattern(new Person("Sumit-1", new Address("India", "335063")));
 
-        System.out.println("===========================");
-        check2("Lokesh-2");
-        check2(new Person("Sumit-2", new Address("Canada", "H2X 3P3")));
+        System.out.println("===== Record Pattern ======================");
+        recordPattern("Lokesh-2");
+        recordPattern(new Person("Sumit-2", new Address("Canada", "H2X 3P3")));
     }
 
-    public static void check1(Object obj){
+    public static void typePattern(Object obj){
         if(obj instanceof String s)
             System.out.println("String : " + s.toUpperCase());
         else if (obj instanceof Person p)
@@ -24,7 +24,7 @@ public class RP_Example2_Nested {
             System.out.println("Unsupported type");
     }
 
-    public static void check2(Object obj){
+    public static void recordPattern(Object obj){
         if(obj instanceof String s)
             System.out.println("String : " + s.toUpperCase());
         else if (obj instanceof Person(String name, Address(String country, String postalCode)))
